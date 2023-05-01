@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      #hero {
+        background-image: url(images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      @media (max-width: 480px) {
+        #hero {
+          background-image: url(images/mobile/image-hero.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero" class="relative py-10 pb-10 mb-16 px-3 md:py-10 md:p-12">
+      <div class="flex justify-between text-white items-center flex-wrap">
+        <a href="" class="text-4xl font-mono font-extrabold">loopstudio</a>
+
+        <div class="hidden md:flex gap-4 text-base font-mono font-extrabold">
+          <div class="group">
+            <a href="" class="group">About</a>
+            <div class="mx-2 group-hover:border group-hover:-mt-[0.1rem]"></div>
+          </div>
+          <div class="group">
+            <a href="" class="">Carrers</a>
+            <div class="mx-2 group-hover:border -mt-[0.1rem]"></div>
+          </div>
+          <div class="group">
+            <a href="" class="">Events</a>
+            <div class="mx-2 group-hover:border -mt-[0.1rem]"></div>
+          </div>
+          <div class="group">
+            <a href="" class="">Products</a>
+            <div class="mx-2 group-hover:border -mt-[0.1rem]"></div>
+          </div>
+          <div class="group">
+            <a href="" class="">Support</a>
+            <div class="mx-2 group-hover:border -mt-[0.1rem]"></div>
+          </div>
+        </div>
+
+        <!-- Nav To-Do -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="z-40 block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+      <div
+        class="my-32 p-2 text-center md:text-left md:p-10 border-2 border-white lg:w-[70%] max-w-auto"
+      >
+        <h1
+          class="font-mono font-extralight text-4xl md:text-8xl text-white tracking-wide"
+        >
+          IMPRESSIVE EXPERIENCES THAT DELIVER
+        </h1>
+      </div>
+
+      <div id="menu" class="absolute top-0 right-0 flex-col justify-center items-center font-mono text-2xl gap-3 p-40 w-full h-full bg-black text-white capitalize hidden">
+        <a href="" class="hover:text-pink-500 duration-200">About</a>
+        <a href="" class="hover:text-pink-500 duration-200">Carrers</a>
+        <a href="" class="hover:text-pink-500 duration-200">Events</a>
+        <a href="" class="hover:text-pink-500 duration-200">Products</a>
+        <a href="" class="hover:text-pink-500 duration-200">Support</a>
+      </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="px-4 py-10 md:py-10 md:px-10">
+      <div class="relative">
+        <img src="images/desktop/image-interactive.jpg" alt="" srcset="" />
+        <div class="md:absolute bottom-0 left-[50%]">
+          <div class="">
+            <h1
+              class="px-8 py-2 md:py-8 font-mono font-normal text-3xl text-center md:text-left md:text-6xl bg-white"
+            >
+              THE LEADER IN INTERACTIVE VR
+            </h1>
+            <p
+              class="px-8 font-mono text-center md:text-left font-thin text-base md:text-2xl bg-white text-gray-500"
+            >
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="mb-20">
+      <div class="flex flex-col md:flex-row mb-6 justify-between px-10">
+        <h1 class="font-mono text-3xl text-center md:text-left">OUR CREATIONS</h1>
+
+        <button
+          class="hidden md:block p-2 text-white text-xl items-center hover:bg-pink-500 active:bg-lime-300 duration-200 bg-black"
+        >
+          SEE ALL
+        </button>
+      </div>
+
+      <div
+        class="px-10 flex flex-col md:flex-row flex-wrap gap-4 justify-between items-center"
+      >
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-deep-earth.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              Deep <br />
+              Earth
+            </h1>
+          </div>
+        </div>
+
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-curiosity.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              The <br />
+              Curiosity
+            </h1>
+          </div>
+        </div>
+
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-soccer-team.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              Soccer <br />
+              Team
+            </h1>
+          </div>
+        </div>
+
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-grid.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              The <br />
+              Grid
+            </h1>
+          </div>
+        </div>
+
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-from-above.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              Up above <br />
+              Earth
+            </h1>
+          </div>
+        </div>
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-fisheye.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              The Fish <br />
+              Eye
+            </h1>
+          </div>
+        </div>
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-night-arcade.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              The Night <br />
+              Arcade
+            </h1>
+          </div>
+        </div>
+        <div class="group relative py-4">
+          <div class="">
+            <img
+              src="images/desktop/image-pocket-borealis.jpg"
+              class="group-hover:scale-110 duration-300 hover:brightness-50 w-full"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="absolute w-full font-mono duration-100 group-hover:text-[2.50rem] tracking-wider text-4xl p-8 text-white bottom-0"
+          >
+            <h1>
+              The Pocket <br />
+              Borealis
+            </h1>
+          </div>
+        </div>
+        <button
+        class="block md:hidden p-2 text-white text-xl items-center hover:bg-pink-500 active:bg-lime-300 duration-200 bg-black w-full"
+      >
+        SEE ALL
+      </button>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="p-8 bg-black text-white">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <a class="font-mono font-semibold text-4xl" href="">loopstudio</a>
+
+        <div class="flex flex-row mt-6">
+          <a href=""><i class="fa-brands fa-facebook mx-2 text-3xl"></i></a>
+          <a href=""><i class="fa-brands fa-twitter mx-2 text-3xl"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest mx-2 text-3xl"></i></a>
+          <a href=""><i class="fa-brands fa-instagram mx-2 text-3xl"></i></a>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 text-gray-400">© 2022 Loopstudios. All Rights Reserved</div>
+    </footer>
+  </body>
+</html>
